@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Musik 2024</title>
+  <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header: Bagian atas halaman dengan navigasi dan judul -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Event Musik 2024</h1>
+      <p>Menyatukan Harmoni & Irama dalam Festival Musik Terbesar</p>
+      <a href="#daftar" class="cta-button">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <!-- Bagian Tentang Event -->
+  <section id="tentang">
+    <h2>Tentang Event</h2>
+    <p>Event Musik 2024 adalah festival tahunan yang menggabungkan berbagai genre musik untuk merayakan kreativitas, harmoni, dan persatuan. Nikmati penampilan dari artis-artis terkemuka dan band indie terbaik di dunia.</p>
+  </section>
+
+  <!-- Bagian Jadwal Acara -->
+  <section id="jadwal">
+    <h2>Jadwal Acara</h2>
+    <ul>
+      <li><strong>15 November 2024:</strong> Pembukaan & Penampilan Spesial</li>
+      <li><strong>16 November 2024:</strong> Band Indie & Kompetisi Musik</li>
+      <li><strong>17 November 2024:</strong> Penutupan & Konser Utama</li>
+    </ul>
+  </section>
+
+  <!-- Bagian Galeri Foto -->
+  <section id="galeri">
+    <h2>Galeri Foto</h2>
+    <div class="foto-container">
+      <img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2022/10/17/20221017_025424jpg-20221017025429.jpg" alt="Penampilan Band">
+      <img src="https://townsquare.media/site/505/files/2023/01/attachment-Copy-of-Copy-of-Rebecca-Wanner-BEC-1-44.jpg" alt="Penonton Bersorak">
+      <img src="https://th.bing.com/th/id/OIP.7RkP58C-S6ClCbyCiFVGEQHaFj?rs=1&pid=ImgDetMain" alt="Panggung Konser">
+    </div>
+  </section>
+
+  <!-- Bagian Formulir Pendaftaran -->
+  <section id="daftar">
+    <h2>Daftar Sekarang</h2>
+    <form action="/submit" method="POST">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &copy; 2024 Event Musik. Semua hak dilindungi.</p>
+  </footer>
+
+  <!-- JavaScript untuk efek smooth scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
